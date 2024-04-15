@@ -7,16 +7,18 @@
     <title>Esercitazione</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+    <script src="index.js"></script>
+    <!--  
     <script>
         $(document).ready(function () {
             document.getElementById("btn_cambia_testo").addEventListener("click", function () {
                 let nome = "Piero";
                 alert("Ciao " + nome);
                 console.log("Benvenuto nella funzione 'Callback'");
-                //    Utilizziamo JQUERY che dopo l'alert cambiara il contenuto del p con id="password"
+                //    Utilizziamo JQUERY che dopo l'alert cambierà il contenuto del p con id="password"
                 $("#password").text("its2029");
-                $(".bordino").css("border", "1px solid red");
+                $(".bordino").css("border", "1px solid red")
+                    .css("background-color", "green");
 
             })
             console.log("ready!");
@@ -24,14 +26,28 @@
         });
 
     </script>
+    -->
 
 </head>
 
 <body>
 
+    <h1 id="title1">Il mio primo sito web</h1>
+
     <button id="btn_cambia_testo">Cliccami per visualizzare password</button>
     <div class="bordino">
         <p id="password">********</p>
+    </div>
+
+    <button id="btn_mostra_username">Cliccami per visualizzare l'username</button>
+    <div class="bordino">
+        <p id="username">********</p>
+    </div>
+    
+    <button id="btn_cod_fiscale">Leggi codice fiscale</button>
+    <div>
+        <p id="anno_accademico_its"><input type="text" id="test3" value="Anno"></p>
+        
     </div>
 
 </body>
